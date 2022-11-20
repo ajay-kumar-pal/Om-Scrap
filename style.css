@@ -74,173 +74,42 @@ header {
 /* ----------------------------------------------------------------- */
 /* BackGround Banner */
 
-.backgroundimg {
+.banner-img-section {
     background-image: url("image/background.jpg");
-    height: 90vh;
-    /* height: 900px; */
+    height: 80vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 80px;
-    font-size: 50px;
+    font-size: 3rem;
+    /* font-size: 5rem; */
     color: white;
     box-sizing: border-box;
-
-    /* object-fit: cover; */
+    
+    
 }
-.backgroundimg h2 {
+.banner-img-section h2{
     margin: 0 0 10px 0;
-}
-
-
-
-/* ----------------------------------------------------------------- */
-/* Form --> Pickup Request */
-
-
-.formrequestpage {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(110, 238, 138); */
-    background-color: #FFFFFF;
-    padding: 10px;
-    box-sizing: border-box;
-
-
-}
-.container {
-    max-width: 700px;
-    width: 100%;
-    padding: 25px 30px;
-    border-radius: 25px;
-    background: #FFFFFF;
-    box-shadow: 0 0 15px black;
-
-}
-
-.container .heading {
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
-    text-align: center;
-    padding: 0 0 20px 0; 
-}
-
-.container .heading::before {
-    content: "";
-    position: absolute;
-    height: 3px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(110, 238, 138);
-
-}
-
-
-
-.container form .card-details {
-    margin-top: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
-    /* padding: 15px; */
-
-}
-
-form .card-details .card-box{
-    width: calc(100% / 2 - 20px);
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
-    /* padding: 15px; */
+    /* font-size: 4rem;
+    font-weight: bold; */
     
 }
 
-.card-details .card-box .details {
-    display: block;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 8px;
 
-}
+/* ----------------------------------------------------------------- */
 
-.card-details .card-box input {
-    /* background-color: red; */
-    height: 45px;
-    width: 100%;
-    padding-left: 15px;
-    outline: none;
-    box-sizing: border-box;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    border: 1px solid#ccc;
-    transition: all 0.3s ease;
-
-}
-.card-details .card-box input:focus,
-.card-details .card-box input:valid {
-    border-color: rgb(110, 238, 138);
-    box-shadow: 0 0 5px rgb(110, 238, 138);
-
-}
-
-/* .container form .button {
+/*-------------------------------------- Start Request Section------------------------------ */
+.container{
     background-color: red;
-    padding: 10px;
-} */
-.container form .button input[type="submit"]{
-    padding: 10px;
-    margin-top: 10px;
-    height: 100%;
-    width: auto;
-    outline: none;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    background-color: rgb(110, 238, 138);
-    cursor: pointer;
-
 }
-.container form .button input[type="submit"]:hover {
-    background-color: green;
-    color: white;
+/*-------------------------------------- End Request Section------------------------------ */
 
-}
+/*-------------------------------------- Start How we works------------------------------ */
+/*-------------------------------------- End How we works------------------------------ */
 
-/* ----------------------------------------------------------------- */
-/* how-we-work section */
+/*-------------------------------------- Start Why OmScrap?------------------------------ */
+/*-------------------------------------- End Why OmScrap?------------------------------ */
 
-.how-we-work {
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(110, 238, 138);
-    /* background-color: #FFFFFF; */
-    box-sizing: border-box;
-    /* display: flex; */
-    flex-wrap: wrap;
+/*-------------------------------------- Start Footer------------------------------ */
+/*-------------------------------------- End Footer------------------------------ */
 
-}
-.bravo {
-    width: 420px;
-    height: 420px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    margin: 0 auto;
-    
-
-    
-    
-}
