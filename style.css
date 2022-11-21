@@ -74,40 +74,178 @@ header {
 /* ----------------------------------------------------------------- */
 /* BackGround Banner */
 
-.banner-img-section {
-    background-image: url("image/background.jpg");
-    height: 80vh;
-    width: 100%;
+.section-banner{
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    background-image: url('image/background.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 80vh;
     padding: 80px 80px;
-    font-size: 3rem;
-    /* font-size: 5rem; */
-    color: white;
-    box-sizing: border-box;
-    
-    
+    color: #fff;
+    /* padding-bottom: 30px; */
 }
-.banner-img-section h2{
-    margin: 0 0 10px 0;
-    /* font-size: 4rem;
-    font-weight: bold; */
-    
+.section-banner h2{
+    font-size:70px;
+    text-shadow: 2px 2px 5px  rgb(45, 221, 83);
+    padding: 10px;
 }
-
-
+.section-banner h4{
+    font-size:50px;
+    text-shadow: 2px 2px 5px  rgb(45, 221, 83);
+    padding: 10px;
+}
 /* ----------------------------------------------------------------- */
 
 /*-------------------------------------- Start Request Section------------------------------ */
 .container{
-    background-color: red;
+    padding: 40px;
+    /* border: 1px solid black; */
+    
+
+}
+.all-heading {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0; 
+}
+.all-heading::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(110, 238, 138);
+}
+
+form .card-details {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    /* padding: 15px; */
+
+}
+
+form .card-details .card-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    /* padding: 15px; */
+    
+}
+
+.card-details .card-box .details {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+
+}
+.card-details .card-box input {
+    /* background-color: red; */
+    height: 45px;
+    width: 100%;
+    padding-left: 15px;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid#ccc;
+    transition: all 0.3s ease;
+
+}
+.card-details .card-box input:focus,
+.card-details .card-box input:valid {
+    border-color: rgb(110, 238, 138);
+    box-shadow: 0 0 5px rgb(110, 238, 138);
+
+}
+form button{
+    padding: 5px;
+    margin-top: 10px;
+    height: 100%;
+    width: auto;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: rgb(110, 238, 138);
+    cursor: pointer;
+
+}
+form button:hover {
+    background-color: green;
+    color: white;
+}
+.form-side-image img{
+    width: 100%;    
 }
 /*-------------------------------------- End Request Section------------------------------ */
 
 /*-------------------------------------- Start How we works------------------------------ */
+
+.how-we-works .centerdiv {
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.how-we-works{
+    /* background-color: rgb(55, 175, 81); */
+    padding: 30px 0 30px 0;
+}
+
+.how-we-works .container{
+    /* border: 2px solid #ccc; */
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px #666;
+
+}
+.how-we-works .cardbox{
+    margin-top: 20px;
+    width: 255px;
+    border-radius: 10%;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #666;
+    
+}
+.how-we-works .cardbox img{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    display: block;
+    border-radius: 10% 10% 0 0;
+    margin-bottom: 15px;
+    
+}
+.how-we-works .cardbox p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
 /*-------------------------------------- End How we works------------------------------ */
 
 /*-------------------------------------- Start Why OmScrap?------------------------------ */
+.why-we{
+    border: 1px solid black;
+    /* #183F08 */
+}
 /*-------------------------------------- End Why OmScrap?------------------------------ */
 
 /*-------------------------------------- Start Footer------------------------------ */

@@ -154,7 +154,6 @@ form .card-details .card-box{
 .container form .button input[type="submit"]:hover {
     background-color: green;
     color: white;
-
 }
 
 /* ----------------------------------------------------------------- */
