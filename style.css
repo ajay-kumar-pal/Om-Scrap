@@ -101,6 +101,102 @@ header {
     padding: 10px;
 }
 /* ----------------------------------------------------------------- */
+/*-------------------------------------- Start Image Slider Section------------------------------ */
+
+.banner-container{
+    width: 100%;
+    /* height: 400px; */
+    /* background-color: red; */
+    /* position: relative; */
+
+}
+
+.banner-container .banner-row{
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    /* background-color: red; */
+    /* box-shadow: 0 0 5px gray; */
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+
+}
+.imageContainer{
+    display: none;
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    transition: 1s;
+}
+
+.imageContainer img{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+.imageContainer .image-text{
+    position: absolute;
+    top: 0;
+    margin: 50px 0 0 50px;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+/* -------------------------------- */
+
+
+.prev, .next{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    
+    width: auto;
+    margin-top: -22px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.6s ease;
+    padding: 16px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid rgb(0, 0, 0);
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius:  5px 0 0 5px ;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+  /* ------------ */
+
+.dots{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #bbb;
+    margin: 0 2px;
+    transition: all 0.6s ease;
+    user-select: none;
+}
+.dots .active, .dot:hover {
+    background-color: #717171;
+}
+/*-------------------------------------- End Image Slider Section------------------------------ */
 
 /*-------------------------------------- Start Request Section------------------------------ */
 .request-section{
@@ -217,14 +313,20 @@ form button:hover {
 .hover-box{
     border: 1px solid #d6cece;
     border-radius: 5px;
-    transition: all linear 0.7;
+    transition:  0.7s;
+    box-sizing: border-box;
+    margin: auto;
+    /* height: 500px; */
+    object-fit: contain;
 }
 
 .hover-box:hover{
     box-shadow: 0 0 10px #08bd4d;
+    transform: scale(1.01);
 }
 .heading,.row p {
     margin-bottom:20px ;
+    text-align: center;
 }
 .how-we-works h2{
     text-align: center;
@@ -237,6 +339,7 @@ form button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 2px;
     padding: 20px 0 20px 0;
     box-sizing: border-box;
 }
@@ -264,11 +367,11 @@ form button:hover {
     /* border: 1px solid black; */
     margin-top: 15px;
     /* #183F08 */
+    margin-bottom: 10px;
 }
 .heading-all{
     margin-top: 15px;
     margin-bottom: 15px;
-
     text-align: center;
     color: #50934a;
     font-size: 30px;
@@ -277,7 +380,6 @@ form button:hover {
 .ww-box{
     width: 180px;
     height: 100%;
-    /* border: 1px solid black; */
     /* position: relative; */
     display: flex;
     justify-content: center;
@@ -286,6 +388,7 @@ form button:hover {
     padding: 10px;
     /* padding-bottom: 0; */
     box-sizing: border-box;
+    border-radius: 5px;
     
 }
 .why-we .img-box{
@@ -297,14 +400,15 @@ form button:hover {
 }
 .why-we img{
     background-color: #fff;
-
+    border: 1px solid rgb(211, 197, 197);
+    padding: 15px;
     /* position: absolute;
     top: 0;
     left: 0; */
     width: 100%;
     border-radius: 50%;
     margin-bottom: 10px;
-    transition: transform .6s;
+    transition: transform .8s;
 
 }
 .why-we img:hover{
