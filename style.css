@@ -36,6 +36,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1;
 
 }
 #navbar {
@@ -80,7 +81,7 @@ header {
 /* BackGround Banner */
 
 .section-banner{
-    /* border: 2px solid black; */
+    border: 2px solid black;
     box-sizing: border-box;
     background-image: url('image/background.jpg') ;
     background-repeat: no-repeat;
@@ -88,7 +89,7 @@ header {
     height: 90vh;
     padding: 80px 80px;
     color: #fff;
-    /* padding-bottom: 30px; */
+    padding-bottom: 30px;
 }
 .section-banner h2{
     font-size:70px;
@@ -100,26 +101,30 @@ header {
     text-shadow: 2px 2px 5px  rgb(45, 221, 83);
     padding: 10px;
 }
-/* ----------------------------------------------------------------- */
-/*-------------------------------------- Start Image Slider Section------------------------------ */
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
 
 .banner-container{
     width: 100%;
-    /* height: 400px; */
+    height: 600px;
     /* background-color: red; */
     /* position: relative; */
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
 
 }
 
 .banner-container .banner-row{
     position: relative;
     width: 100%;
-    height: 500px; 
+    height: 100%;
     /* background-color: red; */
     /* box-shadow: 0 0 5px gray; */
     border-radius: 5px;
     margin: auto;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     overflow: hidden;
 
 }
@@ -152,7 +157,6 @@ header {
     position: absolute;
     cursor: pointer;
     top: 50%;
-    
     width: auto;
     margin-top: -22px;
     font-size: 18px;
@@ -196,8 +200,6 @@ header {
 .dots .active, .dot:hover {
     background-color: #717171;
 }
-/*-------------------------------------- End Image Slider Section------------------------------ */
-
 /*-------------------------------------- Start Request Section------------------------------ */
 .request-section{
     padding:40px 0 40px 0 ;
