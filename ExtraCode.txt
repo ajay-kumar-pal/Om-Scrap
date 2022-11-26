@@ -156,3 +156,5 @@
 
     <!-------------------------------------- End Image Slider Section------------------------------ -->
     
+<section class="section-banner"> 
+<h2>Don't through your waste</h2> <h4>Sell it to us</br> <span style="padding-left: 100px;"> & </span></br> Make Money</h4> </section>
