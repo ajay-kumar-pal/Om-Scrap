@@ -346,6 +346,8 @@ form button:hover {
     height: 450px;
     object-fit: contain;
     box-shadow: 0 0 5px #474b48;
+    cursor: pointer;
+
 
     
 }
@@ -433,6 +435,7 @@ form button:hover {
     border-radius: 5px;
     /* border: 1px solid black; */
     box-shadow: 0 0 10px #e4e4e4;
+    cursor: pointer;
 
 
     
@@ -824,4 +827,24 @@ form button:hover {
 
 }
 /*-------------------------------------- End Rate Card------------------------------ */
+/*-------------------------------------- Start Whatsapp ------------------------------ */
 
+#whatsappIcon i{
+    width: 100px;
+    height: 100px;
+    /* background-color: red; */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 100px;
+    color: rgb(1, 44, 20);
+    margin: 0 20px 40px 0;
+    border-radius: 5px;
+    padding: 0;
+}
+#whatsappIcon i:hover{
+    box-shadow: 0 0 2px gray;
+}
+
+/*-------------------------------------- End Whatsapp ------------------------------ */
