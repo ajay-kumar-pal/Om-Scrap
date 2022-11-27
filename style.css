@@ -331,9 +331,10 @@ form button:hover {
 
 /*-------------------------------------- Start How we works------------------------------ */
 .how-we-works{
-    border: 1px solid rgb(0, 0, 0);
-    padding: 20px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    padding: 50px;
     background-color: #43db71;
+    
 }
 
 .hover-box{
@@ -344,11 +345,14 @@ form button:hover {
     margin: auto;
     height: 450px;
     object-fit: contain;
-}
+    box-shadow: 0 0 5px #474b48;
 
-.hover-box:hover,.hww-box img:hover{
-    box-shadow: 0 0 5px #919592;
-    /* transform: scale(1.01); */
+    
+}
+.hover-box:hover .chngImgRadius{
+    border-radius: 50px 0 50px 0;
+}
+.hover-box:hover{
     background-color: #017d26;
     border-radius: 50px 0 50px 0;
 }
@@ -373,6 +377,7 @@ form button:hover {
     margin-right: 2px;
     padding: 20px 0 20px 0;
     box-sizing: border-box;
+
 }
 .hww-box img{
     border-radius: 5px ;
@@ -400,9 +405,10 @@ form button:hover {
 /*-------------------------------------- Start Why OmScrap?------------------------------ */
 .why-we{
     /* border: 1px solid black; */
-    margin-top: 15px;
+    /* margin-top: 15px; */
     /* #183F08 */
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    margin-top: 50px;
 }
 .heading-all{
     margin-top: 15px;
@@ -416,6 +422,7 @@ form button:hover {
     width: 180px;
     height: 100%;
     /* position: relative; */
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,6 +431,10 @@ form button:hover {
     /* padding-bottom: 0; */
     box-sizing: border-box;
     border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px #e4e4e4;
+
+
     
 }
 .why-we .img-box{
@@ -460,10 +471,12 @@ form button:hover {
 /*-------------------------------------- End Why OmScrap?------------------------------ */
 /*-------------------------------------- Start Query------------------------------ */
 .query_row{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     padding: 30px;
     user-select: none;
+    background-color: #43db71;
+
 }
 .query_row .left_img, .query_row .right_img{
     /* border: 1px solid black; */
@@ -474,7 +487,7 @@ form button:hover {
     
 }
 .query_row .left_img img, .query_row .right_img img{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* background-color: red;  */
     width: 100%;
 
@@ -498,29 +511,67 @@ form button:hover {
 }
 .query_phone{
     text-align: right;
+    /* border: 1px solid black; */
     position: relative;
+    padding-right: 50px;
+
 }
 .query_row .center_query .query_text h2{
     font-size: 50px;
     font-weight: 700;
+    text-align: center;
+    transition: all 0.8s;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 .query_row .center_query .query_phone h3{
+    cursor: pointer;
     font-size: 30px;
     font-weight: 500;
-    /* border: 1px solid black; */
-    padding: 15px;
+    padding-right: 20px;
+    transition: all 0.8s;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
-.query_phone span{
-    border: 1px solid black;
-    font-size: 100px;
-    font-weight: 900;
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 0  rgb(255, 255, 255);
+        
+    }
+    100% {
+        text-shadow: 0 0 10px  rgb(248, 250, 248);
+        transform: scale(1.1);
+    }
+    
+}
+.query_phone  img{
     position: absolute;
-    left: 50px;
+    left: 0px;
     top: 0;
-    padding:10px;
-    line-height: 60px;
-    /* padding-left: 50px; */
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: dragging;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+}
+@keyframes dragging {
+    0% {
+        padding-left: 10%;
+        transition: transform 0.8s ;
+        
+    }
+    100% {
+        padding-left: 20%;
+        transform: scale(2);
+        
+    }
     
 }
 /*-------------------------------------- End Query------------------------------ */
@@ -653,8 +704,124 @@ form button:hover {
     height: 120px;
     background-color: #fff;
     border-radius:0 0 10px 10px;
-
-
 }
 /*-------------------------------------- End Footer------------------------------ */
+
+
+/*-------------------------------------- Start Rate Card------------------------------ */
+#helloworld{
+    background-color: rgb(227, 230, 227);
+    /* border: 1px solid black; */
+}
+.rateCardContainer{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 10px auto;
+    /* margin: px; */
+}
+.rateCardContainer .rateHeading{
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 0 3px gray;
+    font-size: 40px;
+    font-weight: 600;
+    /* border: 1px solid black; */
+    padding: 10px;
+    background-color: #ffffff;
+
+}
+.rateCardContainer .rateHeading::after{
+    margin: auto;
+    background-color:rgb(110, 238, 138);
+    content: "";
+    width: 250px;
+    height: 5px;
+    display: block;
+    margin-top:5px ;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.rateSection{
+    background-color: #ffffff;
+    box-shadow: 0 0 3px gray;
+    margin: 10px auto;
+    /* border: 1px solid rgb(33, 19, 226); */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+.rateSection .rateRow{
+    /* border: 1px solid rgb(192, 20, 20); */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.rateCol{
+    /* border: 1px solid rgb(2, 233, 91); */
+    width: calc(100% / 3);
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.rateCol .rateBox{
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-shadow: 0 0 3px gray;
+    margin: auto;
+    text-align: center;
+    width: 250px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    /* transition: all 2s linear; */
+    transition: all 0.2s ease-in-out;;
+}
+.rateCol .rateBox:hover .newPrice{
+    color: rgb(27, 131, 41);
+    transform: scale(1.1);
+}
+.rateCol .rateBox:hover{
+    box-shadow: 0 0 20px gray;
+}
+.rateCol .rateBox .rateImg{
+    width: 100%;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    /* border: 1px solid rgb(2, 233, 91); */
+
+}
+.rateCol .rateBox .rateImg img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.rateCol .rateBox .rateName{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 10px auto;
+    /* text-decoration: line-through; */
+}
+.rateCol .rateBox .oldPrice{
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-transform: capitalize;
+    margin: 10px auto;
+}
+.rateCol .rateBox .newPrice{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 15px auto;
+    /* border: 1px solid rgb(0, 0, 0); */
+
+}
+/*-------------------------------------- End Rate Card------------------------------ */
 
