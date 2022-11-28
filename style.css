@@ -1,9 +1,6 @@
-
 @import url(https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap%27);
-
-
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
     margin: 0;
     padding: 0;
 }
@@ -15,22 +12,18 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f3f7f8;
-
 }
-p{
+p {
     margin: 0;
     padding: 0;
 }
-
-
 /* ----------------------------------------------------------------- */
 /* Header Part */
-
 header {
     background-color: #eee;
-    display:  flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
     padding: 0 80px;
     box-shadow: 0 5px 15px rgb(162, 245, 180);
     position: sticky;
@@ -38,7 +31,6 @@ header {
     left: 0;
     z-index: 1;
     /* margin-bottom: 10px; */
-
 }
 #navbar {
     display: flex;
@@ -48,25 +40,22 @@ header {
 }
 #navbar li {
     list-style: none;
-    padding:  0 20px;
+    padding: 0 20px;
     position: relative;
 }
-
-#navbar li a{
+#navbar li a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     color: #1a1a1a;
     transition: 0.3s ease;
 }
-
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li a.active {
     color: green;
 }
-
 #navbar li a.active::after,
-#navbar li a:hover::after{
+#navbar li a:hover::after {
     content: "";
     width: 35%;
     height: 2px;
@@ -75,51 +64,18 @@ header {
     bottom: -4px;
     left: 20px;
 }
-
-
-
 /* ----------------------------------------------------------------- */
 /* BackGround Banner */
-/* 
-.section-banner{
-    border: 2px solid black;
-    box-sizing: border-box;
-    background-image: url('image/background1.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    height: 600px;
-
-    padding: 80px 80px;
-    color: #fff;
-    padding-bottom: 30px;
-}
-.section-banner h2{
-    font-size:70px;
-    text-shadow: 2px 2px 5px  rgb(45, 221, 83);
-    padding: 10px;
-}
-.section-banner h4{
-    font-size:50px;
-    text-shadow: 2px 2px 5px  rgb(45, 221, 83);
-    padding: 10px;
-} */
-
-
 /* ---------------------------------------------------------------------------------------------------------------- */
-
-
-.banner-container{
+.banner-container {
     width: 100%;
     height: 500px;
     /* background-color: red; */
     /* position: relative; */
     box-sizing: border-box;
     /* border: 1px solid rgb(0, 0, 0); */
-
 }
-
-.banner-container .banner-row{
+.banner-container .banner-row {
     position: relative;
     width: 100%;
     height: 100%;
@@ -129,9 +85,8 @@ header {
     margin: auto;
     /* margin-top: 50px; */
     overflow: hidden;
-
 }
-.imageContainer{
+.imageContainer {
     display: none;
     /* position: absolute; */
     height: 100%;
@@ -139,13 +94,12 @@ header {
     /* overflow: hidden; */
     transition: 1s;
 }
-
-.imageContainer img{
+.imageContainer img {
     /* background-color: red; */
     width: 100%;
     height: 100%;
 }
-.imageContainer .image-text{
+.imageContainer .image-text {
     position: absolute;
     top: 0;
     margin: 50px 0 0 50px;
@@ -153,25 +107,24 @@ header {
     font-weight: 700;
     color: white;
 }
-.banner_text  h2{
-    font-size:50px;
+.banner_text h2 {
+    font-size: 50px;
     font-weight: 700;
     background-color: rgba(255, 255, 255, 0.329);
-
     /* text-shadow: 2px 2px 5px  rgb(45, 221, 83); */
     padding: 10px;
 }
-.banner_text h4{
+.banner_text h4 {
     font-weight: 700;
     background-color: rgba(37, 37, 37, 0.329);
-    font-size:50px;
+    font-size: 50px;
     /* text-shadow: 2px 2px 5px  rgb(45, 221, 83); */
     padding: 10px;
-} */
+}
+*/
 /* -------------------------------- */
-
-
-.prev, .next{
+.prev,
+.next {
     position: absolute;
     cursor: pointer;
     top: 50%;
@@ -185,25 +138,23 @@ header {
     border: 1px solid rgb(0, 0, 0);
     user-select: none;
 }
-.next{
+.next {
     right: 0;
-    border-radius:  5px 0 0 5px ;
+    border-radius: 5px 0 0 5px;
 }
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
-
-  /* ------------ */
-
-.dots{
+/* ------------ */
+.dots {
     text-align: center;
     position: absolute;
     width: 100%;
     bottom: 0;
 }
-
-.dot{
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -215,26 +166,26 @@ header {
     transition: all 0.6s ease;
     user-select: none;
 }
-.dots .active, .dot:hover {
+.dots .active,
+.dot:hover {
     background-color: #717171;
 }
 /*-------------------------------------- Start Request Section------------------------------ */
-.request-section{
-    padding:40px 0 40px 0 ;
+.request-section {
+    padding: 40px 0 40px 0;
 }
-.request-section .container{
+.request-section .container {
     padding: 40px;
     border-radius: 5px;
     border: 1px solid #d6cece;
     background-color: #fff;
-
 }
 .all-heading {
     font-size: 25px;
     font-weight: 500;
     /* position: relative; */
     text-align: center;
-    padding: 0 0 20px 0; 
+    padding: 0 0 20px 0;
 }
 /* .all-heading::before {
     content: "";
@@ -242,11 +193,9 @@ header {
     height: 3px;
     left: 0;
     bottom: 0;
-
     width: 100px;
     background-color: rgb(110, 238, 138);
 } */
-
 .all-heading::after {
     background: rgb(110, 238, 138);
     content: "";
@@ -255,8 +204,6 @@ header {
     height: 3px;
     margin-top: 10px;
 }
-
-
 form .card-details {
     margin-top: 25px;
     display: flex;
@@ -265,24 +212,19 @@ form .card-details {
     box-sizing: border-box;
     /* border: 1px solid black; */
     /* padding: 15px; */
-
 }
-
-form .card-details .card-box{
+form .card-details .card-box {
     width: calc(100% / 2 - 20px);
     margin-bottom: 15px;
     box-sizing: border-box;
     /* border: 1px solid black; */
     /* padding: 15px; */
-    
 }
-
 .card-details .card-box .details {
     display: block;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 8px;
-
 }
 .card-details .card-box input {
     /* background-color: red; */
@@ -296,15 +238,13 @@ form .card-details .card-box{
     font-weight: 500;
     border: 1px solid#ccc;
     transition: all 0.3s ease;
-
 }
 .card-details .card-box input:focus,
 .card-details .card-box input:valid {
     border-color: rgb(110, 238, 138);
     box-shadow: 0 0 5px rgb(110, 238, 138);
-
 }
-form button{
+form button {
     padding: 10px;
     margin-top: 10px;
     height: 100%;
@@ -318,60 +258,52 @@ form button{
     letter-spacing: 1px;
     background-color: rgb(110, 238, 138);
     cursor: pointer;
-
 }
 form button:hover {
     background-color: green;
     color: white;
 }
-.form-side-image img{
-    width: 100%;    
+.form-side-image img {
+    width: 100%;
 }
 /*-------------------------------------- End Request Section------------------------------ */
-
 /*-------------------------------------- Start How we works------------------------------ */
-.how-we-works{
+.how-we-works {
     /* border: 1px solid rgb(0, 0, 0); */
     padding: 50px;
     background-color: #43db71;
-    
 }
-
-.hover-box{
+.hover-box {
     /* border: 1px solid #000000; */
     border-radius: 5px;
-    transition: all  0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
     box-sizing: border-box;
     margin: auto;
     height: 450px;
     object-fit: contain;
     box-shadow: 0 0 5px #474b48;
     cursor: pointer;
-
-
-    
 }
-.hover-box:hover .chngImgRadius{
+.hover-box:hover .chngImgRadius {
     border-radius: 50px 0 50px 0;
 }
-.hover-box:hover{
+.hover-box:hover {
     background-color: #017d26;
     border-radius: 50px 0 50px 0;
 }
-.heading,.row p {
-    margin-bottom:20px ;
+.heading,
+.row p {
+    margin-bottom: 20px;
     text-align: center;
     color: #000000;
-
-
 }
-.how-we-works h2{
+.how-we-works h2 {
     text-align: center;
     color: #ffffff;
     font-size: 30px;
     font-weight: 800;
 }
-.hww-box{
+.hww-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,40 +311,35 @@ form button:hover {
     margin-right: 2px;
     padding: 20px 0 20px 0;
     box-sizing: border-box;
-
 }
-.hww-box img{
-    border-radius: 5px ;
+.hww-box img {
+    border-radius: 5px;
     /* margin-top: 20px; */
     margin-bottom: 20px;
     object-fit: contain;
-    transition: all  0.7s ease-in-out;
-
+    transition: all 0.7s ease-in-out;
 }
-.hww-box h4{
+.hww-box h4 {
     padding-bottom: 5px;
     color: #ffffff;
     /* color: #50934a; */
     /* background-color: red; */
-
 }
-.hww-box p{
+.hww-box p {
     padding-bottom: 0;
     color: black;
     font-weight: 500;
-
 }
 /*-------------------------------------- End How we works------------------------------ */
-
 /*-------------------------------------- Start Why OmScrap?------------------------------ */
-.why-we{
+.why-we {
     /* border: 1px solid black; */
     /* margin-top: 15px; */
     /* #183F08 */
     margin-bottom: 25px;
     margin-top: 50px;
 }
-.heading-all{
+.heading-all {
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
@@ -420,7 +347,7 @@ form button:hover {
     font-size: 30px;
     font-weight: 700;
 }
-.ww-box{
+.ww-box {
     width: 180px;
     height: 100%;
     /* position: relative; */
@@ -436,18 +363,14 @@ form button:hover {
     /* border: 1px solid black; */
     box-shadow: 0 0 10px #e4e4e4;
     cursor: pointer;
-
-
-    
 }
-.why-we .img-box{
+.why-we .img-box {
     height: 70%;
 }
-.why-we .img-footer{
+.why-we .img-footer {
     height: 30%;
-    
 }
-.why-we img{
+.why-we img {
     background-color: #fff;
     border: 1px solid rgb(211, 197, 197);
     padding: 15px;
@@ -458,13 +381,12 @@ form button:hover {
     border-radius: 50%;
     margin-bottom: 10px;
     transition: transform .8s;
-
 }
-.why-we img:hover{
+.why-we img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #71e961;
 }
-.why-we p{
+.why-we p {
     width: 100%;
     /* top: 0; */
     text-align: center;
@@ -473,30 +395,28 @@ form button:hover {
 }
 /*-------------------------------------- End Why OmScrap?------------------------------ */
 /*-------------------------------------- Start Query------------------------------ */
-.query_row{
+.query_row {
     /* border: 1px solid black; */
     display: flex;
     padding: 30px;
     user-select: none;
     background-color: #43db71;
-
 }
-.query_row .left_img, .query_row .right_img{
+.query_row .left_img,
+.query_row .right_img {
     /* border: 1px solid black; */
     /* background-color: red;  */
     width: 15%;
     margin: 30px;
     /* padding: 0; */
-    
 }
-.query_row .left_img img, .query_row .right_img img{
+.query_row .left_img img,
+.query_row .right_img img {
     /* border: 1px solid black; */
     /* background-color: red;  */
     width: 100%;
-
 }
-
-.query_row .center_query{
+.query_row .center_query {
     /* border: 1px solid black; */
     margin: auto;
     padding: 20px;
@@ -504,22 +424,20 @@ form button:hover {
     border-radius: 0 60px 0 60px;
     box-shadow: 0 0 3px rgb(92, 90, 90);
     background-color: rgb(11, 88, 4);
-    
-
 }
-.query_row .center_query .query_text, .query_phone{
+.query_row .center_query .query_text,
+.query_phone {
     /* border: 1px solid black; */
     padding: 10px;
     color: white;
 }
-.query_phone{
+.query_phone {
     text-align: right;
     /* border: 1px solid black; */
     position: relative;
     padding-right: 50px;
-
 }
-.query_row .center_query .query_text h2{
+.query_row .center_query .query_text h2 {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
@@ -530,7 +448,7 @@ form button:hover {
     animation-direction: alternate;
     animation-timing-function: linear;
 }
-.query_row .center_query .query_phone h3{
+.query_row .center_query .query_phone h3 {
     cursor: pointer;
     font-size: 30px;
     font-weight: 500;
@@ -544,16 +462,14 @@ form button:hover {
 }
 @keyframes glow {
     0% {
-        text-shadow: 0 0 0  rgb(255, 255, 255);
-        
+        text-shadow: 0 0 0 rgb(255, 255, 255);
     }
     100% {
-        text-shadow: 0 0 10px  rgb(248, 250, 248);
+        text-shadow: 0 0 10px rgb(248, 250, 248);
         transform: scale(1.1);
     }
-    
 }
-.query_phone  img{
+.query_phone img {
     position: absolute;
     left: 0px;
     top: 0;
@@ -562,35 +478,27 @@ form button:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    
 }
 @keyframes dragging {
     0% {
         padding-left: 10%;
-        transition: transform 0.8s ;
-        
+        transition: transform 0.8s;
     }
     100% {
         padding-left: 20%;
         transform: scale(2);
-        
     }
-    
 }
 /*-------------------------------------- End Query------------------------------ */
-
 /*-------------------------------------- Start Footer------------------------------ */
-
-#footer-section{
+#footer-section {
     width: 100%;
     /* border: 1px solid black; */
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    
 }
-
-.footer-row{
+.footer-row {
     width: 100%;
     /* border: 1px solid black; */
     box-sizing: border-box;
@@ -598,238 +506,249 @@ form button:hover {
     flex-wrap: wrap;
     background-color: #555050;
 }
-.footer-col{
+.footer-col {
     width: 25%;
     /* border: 1px solid black; */
     box-sizing: border-box;
     padding: 50px;
 }
-.footer-col h4{
+.footer-col h4 {
     font-size: 18px;
-	color: #fff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
 }
-.footer-col h4::after{
+.footer-col h4::after {
     content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #43db71;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #43db71;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
-.footer-row ul{
+.footer-row ul {
     list-style: none;
 }
-.footer-col ul li a{
+.footer-col ul li a {
     font-size: 16px;
-	text-transform: capitalize;
-	color: #fff;
-	text-decoration: none;
-	font-weight: 500;
-	display: block;
-	transition: all 0.3s ease;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
     margin-bottom: 5px;
 }
-.footer-col ul li a:hover{
-	padding-left: 8px;
-	color: #43db71;
+.footer-col ul li a:hover {
+    padding-left: 8px;
+    color: #43db71;
 }
-
-.footer-col .footer-social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	transition: all 0.3s ease;
+.footer-col .footer-social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
     color: #eee;
     background-color: green;
 }
-.footer-col .footer-social-links a:hover{
+.footer-col .footer-social-links a:hover {
     color: #020000;
     transform: scale(1.1);
     box-shadow: 0 0 10px #71e961;
     background-color: #43db71;
 }
-.footer-col .footer-address{
+.footer-col .footer-address {
     text-transform: capitalize;
     font-weight: 500;
     margin-bottom: 15px;
     color: #fff;
 }
-.footer-col .footer-phone{
+.footer-col .footer-phone {
     text-transform: capitalize;
     font-weight: 500;
     color: #fff;
-    
 }
-.footer-col .footer-phone a{
+.footer-col .footer-phone a {
     color: #fff;
     font-weight: 500;
     text-decoration: none;
-    
 }
-.footer-col .footer-logo{
+.footer-col .footer-logo {
     width: 100%;
     height: 50%;
     padding-right: 50px;
     margin-bottom: 0;
-
-    
 }
-.hello{
+.hello {
     display: flex;
     flex-direction: column;
 }
-.footer-recycle{
+.footer-recycle {
     width: 100%;
     height: 30%;
     padding-right: 50px;
     margin-top: 0;
 }
-.footer-col .footer-logo img{
+.footer-col .footer-logo img {
     width: 120px;
     height: 120px;
     background-color: #fff;
-    border-radius: 10px 10px 0 0 ;
-
-
+    border-radius: 10px 10px 0 0;
 }
-.footer-col .footer-recycle img{
+.footer-col .footer-recycle img {
     width: 120px;
     height: 120px;
     background-color: #fff;
-    border-radius:0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
 }
 /*-------------------------------------- End Footer------------------------------ */
-
-
 /*-------------------------------------- Start Rate Card------------------------------ */
-#helloworld{
-    background-color: rgb(227, 230, 227);
-    /* border: 1px solid black; */
-}
-.rateCardContainer{
-    /* border: 1px solid black; */
-    width: 90%;
-    margin: 10px auto;
-    /* margin: px; */
-}
-.rateCardContainer .rateHeading{
-    font-weight: 600;
-    text-align: center;
-    box-shadow: 0 0 3px gray;
-    font-size: 40px;
-    font-weight: 600;
-    /* border: 1px solid black; */
+#ratecard_section {
     padding: 10px;
-    background-color: #ffffff;
-
-}
-.rateCardContainer .rateHeading::after{
-    margin: auto;
-    background-color:rgb(110, 238, 138);
-    content: "";
-    width: 250px;
-    height: 5px;
-    display: block;
-    margin-top:5px ;
-    border-radius: 3px;
-    box-sizing: border-box;
-}
-.rateSection{
-    background-color: #ffffff;
-    box-shadow: 0 0 3px gray;
-    margin: 10px auto;
-    /* border: 1px solid rgb(33, 19, 226); */
-    /* justify-content: center; */
-    /* align-items: center; */
-    padding: 50px;
-    box-sizing: border-box;
-
-}
-.rateSection .rateRow{
-    /* border: 1px solid rgb(192, 20, 20); */
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-
-}
-.rateCol{
-    /* border: 1px solid rgb(2, 233, 91); */
-    width: calc(100% / 3);
-    padding: 10px;
-    box-sizing: border-box;
-
-}
-.rateCol .rateBox{
-    /* border: 1px solid rgb(0, 0, 0); */
-    box-shadow: 0 0 3px gray;
+    width: 80%;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar {
+    /* height: 90vh; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    /* box-shadow: 0 0 10px rgb(102, 100, 100); */
+    /* background-color: rgb(24, 100, 213); */
+}
+.text,
+.rateList_heading {
+    font-size: 30px;
+    padding: 10px;
     text-align: center;
-    width: 250px;
-    box-sizing: border-box;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: rgb(0, 84, 0);
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    /* box-shadow: 0 0 10px rgb(102, 100, 100); */
+}
+.sidebar ul {
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 0 10px rgb(102, 100, 100);
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+}
+.sidebar ul li {
     border-radius: 10px;
-    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    text-transform: capitalize;
     cursor: pointer;
-    /* transition: all 2s linear; */
-    transition: all 0.2s ease-in-out;;
+    transition: all 0.5s linear;
+    /* box-shadow: 0 0 3px rgb(102, 100, 100); */
 }
-.rateCol .rateBox:hover .newPrice{
-    color: rgb(27, 131, 41);
-    transform: scale(1.1);
+.sidebar ul li:hover {
+    background-color: green;
 }
-.rateCol .rateBox:hover{
-    box-shadow: 0 0 20px gray;
+.sidebar ul li a {
+    /* padding-left: 30px; */
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s linear;
 }
-.rateCol .rateBox .rateImg{
-    width: 100%;
-    /* border-radius: 50%; */
+.sidebar ul li:hover a {
+    color: #fff;
+    font-weight: 700;
+}
+.rightSide_section {
+    background-color: #fff;
+    width: 80%;
+    /* box-shadow: 0 0 10px rgb(102, 100, 100); */
+    margin-left: 10px;
+    /* border: 1px solid black; */
+}
+.scrapList_container {
+    display: grid;
+    padding: 15px;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 230px));
+    /* grid-template-rows: repeat(auto-fit, minmax(400px, 400px)); */
+    grid-gap: 50px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.scrapItem_box {
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px rgb(204, 216, 243);
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.scrapItem_box .itemImg {
+    border-radius: 50%;
     overflow: hidden;
-    /* border: 1px solid rgb(2, 233, 91); */
-
+    /* box-shadow: 0 0 5px; */
+    transition: transform 1s;
 }
-.rateCol .rateBox .rateImg img{
-    width: 100%;
-    object-fit: cover;
+.scrapItem_box .itemImg img {
+    transition: transform 1s;
 }
-
-.rateCol .rateBox .rateName{
-    font-size: 20px;
+.scrapItem_box .itemName {
+    font-size: 22px;
     font-weight: 600;
-    text-transform: capitalize;
-    margin: 10px auto;
-    /* text-decoration: line-through; */
-}
-.rateCol .rateBox .oldPrice{
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: line-through;
-    text-decoration-thickness: 2px;
-    text-transform: capitalize;
-    margin: 10px auto;
-}
-.rateCol .rateBox .newPrice{
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: capitalize;
+    color: green;
+    /* border: 1px solid black; */
     margin: 15px auto;
-    /* border: 1px solid rgb(0, 0, 0); */
-
+    text-align: center;
+}
+.scrapItem_box .itemPrice .oldPrice {
+    text-align: center;
+    text-decoration: line-through solid rgb(54, 54, 54);
+    font-weight: 500;
+    /* text-decoration-thickness: 4px black; */
+    /* text-decoration-thickness: auto; */
+    /* border: 1px solid black; */
+    font-size: 15px;
+    color: rgb(36, 31, 31);
+}
+.scrapItem_box .itemPrice .newPrice {
+    text-align: center;
+    font-size: 20px;
+    /* text-decoration: line-through solid rgb(54, 54, 54); */
+    font-weight: 600;
+    /* text-decoration-thickness: 4px black; */
+    /* text-decoration-thickness: auto; */
+    /* border: 1px solid black; */
+    /* font-size: 15px; */
+    color: rgb(0, 0, 0);
+    /* border: 1px solid black; */
+    /* transition: all 1s ease; */
+}
+.scrapItem_box .itemPrice .newPrice .amt {
+    color: green;
+}
+.scrapItem_box:hover {
+    box-shadow: 0 0 10px rgba(90, 129, 221, 0.8);
+}
+.scrapItem_box:hover .itemImg img {
+    transform: scale(1.05);
 }
 /*-------------------------------------- End Rate Card------------------------------ */
 /*-------------------------------------- Start Whatsapp ------------------------------ */
-
-#whatsappIcon i{
+#whatsappIcon i {
     width: 100px;
     height: 100px;
     /* background-color: red; */
@@ -843,8 +762,7 @@ form button:hover {
     border-radius: 5px;
     padding: 0;
 }
-#whatsappIcon i:hover{
+#whatsappIcon i:hover {
     box-shadow: 0 0 2px gray;
 }
-
 /*-------------------------------------- End Whatsapp ------------------------------ */
