@@ -675,6 +675,16 @@ form button:hover {
     margin-left: 10px;
     /* border: 1px solid black; */
 }
+.category_heading{
+    /* border: 1px solid black; */
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding:15px;
+    box-shadow: 0 0 5px rgb(102, 100, 100);
+
+}
 .scrapList_container {
     display: grid;
     padding: 15px;
@@ -688,7 +698,7 @@ form button:hover {
 .scrapItem_box {
     /* border: 1px solid black; */
     box-shadow: 0 0 10px rgb(204, 216, 243);
-    border-radius: 30px;
+    border-radius: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -766,3 +776,8 @@ form button:hover {
     box-shadow: 0 0 2px gray;
 }
 /*-------------------------------------- End Whatsapp ------------------------------ */
+
+/*-------------------------------------- Start Admin pannel Code------------------------------ */
+
+
+/*-------------------------------------- End Admin pannel Code------------------------------ */
